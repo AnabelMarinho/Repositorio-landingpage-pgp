@@ -4,6 +4,6 @@
 @tailwind utilities;
 
 body{
-    @apply bg-fundo text-gray-900 font-sans;
+    @apply bg-claro text-gray-900 font-sans;
     font-family: 'Montserrat', sans-serif;
 }
