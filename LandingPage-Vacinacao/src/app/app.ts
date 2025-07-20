@@ -1,15 +1,15 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { Home } from './sections/home/home'; 
+import { Footer } from './sections/footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  standalone: true,
+  imports: [Home, Footer], 
   template: `
-    <h1>Welcome to {{ title() }}!</h1>
-
-    
+    <app-home></app-home>
+    <app-footer></app-footer>
   `,
   styles: [],
 })
-export class App {
-  protected readonly title = signal('nome-do-projeto');
-}
+export class App {}
