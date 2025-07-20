@@ -2,27 +2,33 @@
 
   <div class="flex flex-1 flex-col lg:flex-row items-center gap-y-10 lg:gap-y-0 lg:gap-x-12 p-6 lg:p-0 animate-fade-slide">
     
-    <!-- IMAGEM -->
     <div class="w-full lg:w-1/2 min-w-[250px]">
       <img src="assets/campanha-vacina.png" alt="campanha vacina" 
        class="w-full max-w-[800px] animate-fade-slide delay-500" />
     </div>
 
-    <!-- TEXTO -->
     <div class="w-full lg:w-1/2 min-w-[250px] lg:min-w-[400px]">
       <h1 class="text-3xl font-bold sm:text-5xl animate-slideUpAndFade delay-100">
         Por que a vacinação é <span class="text-primario">importante</span>?
       </h1>
-      <p class="text-sm sm:text-xl animate-slideUpAndFade delay-300 mt-4">
+      <p class="text-sm  animate-slideUpAndFade delay-300 mt-4">
         A vacinação é reconhecida como uma das mais eficazes estratégias para preservar a saúde da população e fortalecer uma sociedade saudável e resistente. Além de prevenir doenças graves, a imunização contribui para reduzir a disseminação desses agentes infecciosos na comunidade, protegendo aqueles que não podem ser vacinados por motivos de saúde.
       </p>
     </div>
   </div>
 
-  <div class="w-full bg-primario text-claro py-10 px-6 lg:rounded-xl relative overflow-hidden">
-    <p>
-      A influenza é uma infecção viral aguda, que afeta o sistema respiratório e é de alta transmissibilidade. A estratégia de vacinação contra a influenza tem como propósito reduzir internações, complicações e óbitos na população-alvo. A vacinação anual é capaz de promover imunidade durante o período de maior circulação dos vírus influenza.
-    </p>
-    <div class="bg-claro w-full h-[2px] absolute top-5"></div>
+  <div class="animate-fade-slide">
+    <div class="w-full bg-primario text-claro py-10 px-6 lg:rounded-xl relative overflow-hidden z-10 cursor-pointer 
+    group transition-transform duration-500 hover:-translate-y-2 shadow-xl">
+
+        <p class="relative z-10">
+        A influenza é uma infecção viral aguda, que afeta o sistema respiratório e é de alta transmissibilidade. A estratégia de vacinação contra a influenza tem como propósito reduzir internações, complicações e óbitos na população-alvo. A vacinação anual é capaz de promover imunidade durante o período de maior circulação dos vírus influenza.
+        </p>
+        <div class="w-full h-[90%] bg-claro ml-2 mt-1 inset-0 rounded-xl absolute top-0 z-[-2]"></div>
+        <div class="w-full h-[90%] bg-primario ml-3 mt-2 inset-0 rounded-xl absolute top-0 z-[-1] "></div>
+
+    </div>
   </div>
+
+ 
 </div>
