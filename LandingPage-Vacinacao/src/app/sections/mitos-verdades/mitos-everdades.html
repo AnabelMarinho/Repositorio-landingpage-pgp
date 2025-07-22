@@ -1,3 +1,32 @@
-<p>mitos-everdades works!</p>
-<span class="material-symbols-outlined">check_circle</span>
-<span class="material-symbols-outlined">cancel</span>
+<div class="w-full min-h-screen flex flex-col justify-around items-center px-4 lg:px-[135px] sm:px-[100px] my-4">
+  <h1 class="text-3xl font-bold sm:text-5xl animate-slideUpAndFade delay-100 self-start">
+    <span class="text-primario">Mitos e Verdades</span> sobre a vacina
+  </h1>
+  <div class="w-full flex flex-col lg:flex-row items-center justify-between gap-4">
+  <div>
+    <button (click)="prev()" class="bg-primario text-claro rounded-full p-2 shadow hover:bg-opacity-80 flex items-center justify-center">
+      <span class="material-symbols-outlined text-[32px] leading-none">chevron_left</span>
+    </button>
+  </div>
+
+  <div class=" max-w-5xl">
+    <app-bigcard
+      class="w-full h-full"
+      [icon]="cards[currentIndex].icon"
+      [title]="cards[currentIndex].title"
+      [content]="cards[currentIndex].content"
+      [type]="cards[currentIndex].type" 
+    ></app-bigcard>
+  </div>
+
+  <div>
+    <button (click)="next()" class="bg-primario text-claro rounded-full p-2 shadow hover:bg-opacity-80 flex items-center justify-center">
+      <span class="material-symbols-outlined text-[32px] leading-none">chevron_right</span>
+    </button>
+  </div>
+  </div>
+  
+  <div class="bottom-0 text-sm text-gray-500">
+    {{ currentIndex + 1 }} / {{ cards.length }}
+  </div>
+</div>

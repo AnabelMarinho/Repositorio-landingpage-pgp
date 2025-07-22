@@ -12,6 +12,7 @@ module.exports = {
         escuro: "#121212",
         destaque: '#018297',
         alerta: '#D34245',
+        positivo: '#54bf56'
       },
       keyframes: {
         'fade-slide': {
