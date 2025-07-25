@@ -1,5 +1,5 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist/nome-do-projeto",
-  "framework": "other"
+  "framework": "angular"
 }
